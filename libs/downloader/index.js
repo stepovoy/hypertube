@@ -67,6 +67,8 @@ var downloadMovie = (magnet) => {
             path: 'tmp/videos/',
         });
 
+        var videos = 'public/videos';
+
         var count = 0;
         var filesNum = 0;
 
@@ -77,9 +79,13 @@ var downloadMovie = (magnet) => {
                 // console.log('filename:', file.name);
                 if (format === 'mp4' || format === 'webm' || format === 'ogg' || format === 'mkv') {
 	                var stream = file.createReadStream();
+                    if (!fs.existsSync(videos)){
+                        console.log('public/videos directory has been created');
+                        fs.mkdirSync(videos);
+                    }
 	                console.log('matching movie format');
-                    console.log('path is the following: ' + 'public/videos/' + file.name)
-                    stream.pipe(fs.createWriteStream('public/videos/' + file.name));
+                    console.log('path is the following: ' + videos + '/' + file.name)
+                    stream.pipe(fs.createWriteStream(videos + '/' + file.name));
                 }
                 else {
                     console.log('non-supported video format or other type of file');
