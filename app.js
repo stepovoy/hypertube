@@ -6,10 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser 	 = require('body-parser');
 var session 	 = require('express-session');
 
+var cors         = require('cors');
+
 var index 		 = require('./routes/index');
 var users 		 = require('./routes/users');
 
 var app 		 = express();
+
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
