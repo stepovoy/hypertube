@@ -5,9 +5,9 @@ var torrentStream = require('torrent-stream');
 
 // var opensubtitlesApi = require("opensubtitles-api")
 //
-// const OS = require('opensubtitles-api');
+// var OS = require('opensubtitles-api');
 //
-// const OpenSubtitles = new OS({
+// var OpenSubtitles = new OS({
 // 	useragent:'OSTestUserAgentTemp',
 // 	username: 'hypertube42',
 // 	password: '111111',
@@ -23,43 +23,47 @@ var torrentStream = require('torrent-stream');
 // 		console.log(err);
 // 	});
 //
+// var data; // immitates db variable, which consists of movie info
+//
 // OpenSubtitles.search({
-// 	sublanguageid: 'fre',       // Can be an array.join, 'all', or be omitted.
-// 	path: 'foo/bar.mp4',        // Complete path to the video file, it allows
+// 	sublanguageid: 'all',       // Can be an array.join, 'all', or be omitted.
+// 	path: 'public/videos/Anomalous.2016.720p.BluRay.x264-[YTS.AG].mp4',        // Complete path to the video file, it allows
 //                                 //   to automatically calculate 'hash'.
-// 	filename: 'bar.mp4',        // The video file name. Better if extension
+// 	filename: 'Anomalous.2016.720p.BluRay.x264-[YTS.AG].mp4',        // The video file name. Better if extension
 //                                 //   is included.
 // 	extensions: ['srt', 'vtt'], // Accepted extensions, defaults to 'srt'.
-// 	limit: '3',                 // Can be 'best', 'all' or an
+// 	// limit: '3',                 // Can be 'best', 'all' or an
 //                                 // arbitrary nb. Defaults to 'best'
-// 	query: 'Charlie Chaplin',   // Text-based query, this is not recommended.
-// }).then(subtitles => {
+// 	// query: 'Charlie Chaplin',   // Text-based query, this is not recommended.
+// }).then(subtitles => downloadSubtitles(subtitles, data)
+// 	.then(data => res.send(data)))
+// 	.catch(() => res.send(data)
 // 	// an array of objects, no duplicates (ordered by
 // 	// matching + uploader, with total downloads as fallback)
 //
-// 	subtitles = Object {
-// 		en: {
-// 			downloads: "432",
-// 				encoding: "ASCII",
-// 				id: "192883746",
-// 				lang: "en",
-// 				langName: "English",
-// 				score: 9,
-// 				url: "http://dl.opensubtitles.org/download/subtitle_file_id",
-// 				filename: "some_movie.tag.srt"
-// 		}
-// 		fr: {
-// 			download: "221",
-// 				encoding: "UTF-8",
-// 				id: "1992536558",
-// 				lang: "fr",
-// 				langName: "French",
-// 				score: 6,
-// 				url: "http://dl.opensubtitles.org/download/subtitle_file_id",
-// 				filename: "some_movie.tag.srt"
-// 		}
-// 	}
-// });
+// 	// subtitles = Object {
+// 	// 	en: {
+// 	// 		downloads: "432",
+// 	// 			encoding: "ASCII",
+// 	// 			id: "192883746",
+// 	// 			lang: "en",
+// 	// 			langName: "English",
+// 	// 			score: 9,
+// 	// 			url: "http://dl.opensubtitles.org/download/subtitle_file_id",
+// 	// 			filename: "some_movie.tag.srt"
+// 	// 	}
+// 	// 	fr: {
+// 	// 		download: "221",
+// 	// 			encoding: "UTF-8",
+// 	// 			id: "1992536558",
+// 	// 			lang: "fr",
+// 	// 			langName: "French",
+// 	// 			score: 6,
+// 	// 			url: "http://dl.opensubtitles.org/download/subtitle_file_id",
+// 	// 			filename: "some_movie.tag.srt"
+// 	// 	}
+// 	// }
+// );
 
 var downloadMovie = (magnet) => {
     return new Promise(resolve => {
@@ -103,7 +107,40 @@ var downloadMovie = (magnet) => {
         })
     })
 }
-
+//
+// var downloadSubtitles = (subtitles, data) => {
+// 	return new Promise(resolve => {
+// 		var path = './tmp/captions/';
+// 		var eng = '';
+// 		var rus = '';
+// 		download([
+// 			subtitles.en.url
+// 		], path)
+// 			.on('close', (err, url, file) => {
+// 				eng = file;
+// 			}).on('done', () => {
+// 			var srtData = fs.readFileSync('./' + eng);
+// 			srt2vtt(srtData, (err, vttData) => {
+// 				fs.writeFileSync(path + data.name + 'en.vtt', vttData);
+// 			});
+// 		});
+// 		download([
+// 			subtitles.ru.url
+// 		], path)
+// 			.on('close', (err, url, file) => {
+// 				rus = file;
+// 			}).on('done', () => {
+// 			var srtData = fs.readFileSync('./' + rus);
+// 			srt2vtt(srtData, (err, vttData) => {
+// 				fs.writeFileSync(path + data.name + 'ru.vtt', vttData);
+// 			});
+// 		});
+// 		data.en = 'public/captions/' + data.name + 'en.vtt';
+// 		data.ru = 'public/captions/' + data.name + 'ru.vtt';
+// 		resolve(data);
+// 		console.log('downloadSubtitles function completed successfully!')
+// 	});
+// };
 
 
 module.exports = function (magnet) {
