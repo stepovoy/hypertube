@@ -1,19 +1,19 @@
 {
-  "name": "stream-torrent",
+  "name": "hypertube",
   "version": "2.0.0",
   "description": "Torrent-parser and video streamer",
   "private": true,
   "main": "./bin/www",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stepovoy/stream-torrent-movies.git"
+    "url": "git+https://github.com/stepovoy/hypertube.git"
   },
   "author": "Arthur Stepovoy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stepovoy/stream-torrent-movies/issues"
+    "url": "https://github.com/stepovoy/hypertube/issues"
   },
-  "homepage": "https://github.com/stepovoy/stream-torrent-movies#readme",
+  "homepage": "https://github.com/stepovoy/hypertube#readme",
   "dependencies": {
     "async": "^2.5.0",
     "body-parser": "~1.17.1",
