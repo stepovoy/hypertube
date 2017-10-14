@@ -16,16 +16,19 @@ router.get('/test', function(req, res, next) {
 router.post('/find', function(req, res, next) {
 	var start = req.body.start ? req.body.start : 0;
 
+	// parser(start, req.body.film, (data) => {
+	// 	// res.send(JSON.stringify({err:null, res: data}));
+	// 	// res.status('200').send({
+	// 	// 	title: 'Search results',
+	// 	// 	films: data
+	// 	// });
+	// 	res.render('results', {
+	// 		title: 'Search results',
+	// 		films: data
+	// 	});
+	// });
 	parser(start, req.body.film, (data) => {
-		// res.send(JSON.stringify({err:null, res: data}));
-		// res.status('200').send({
-		// 	title: 'Search results',
-		// 	films: data
-		// });
-		res.render('results', {
-			title: 'Search results',
-			films: data
-		});
+		res.end({err:null, res: data});
 	});
 });
 

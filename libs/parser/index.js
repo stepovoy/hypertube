@@ -31,25 +31,25 @@ class Parsers extends parserTools {
 
 		needle.get(url, (err, res) => {
 			let $ = cheerio.load(res.body);
-		$('.browse-movie-wrap').length == 0 ? callback(urls) : 0;
+			$('.browse-movie-wrap').length == 0 ? callback(urls) : 0;
 
-		let q = async.queue(function (task, callback) {
-			urls[urls.length] = task.children[0].next.attribs.href;
-			callback();
-		}, 20);
+			let q = async.queue(function (task, callback) {
+				urls[urls.length] = task.children[0].next.attribs.href;
+				callback();
+			}, 20);
 
-		this.pushToQueue(q, $('.browse-movie-wrap'));
+			this.pushToQueue(q, $('.browse-movie-wrap'));
 
-		let promise = new Promise((resolve, reject) => {
-			q.drain = function (err) {
-			if (err) {
-				reject(err);
-				return ;
-			}
-			console.log(urls);
-			resolve(urls);
-		};
-	});
+			let promise = new Promise((resolve, reject) => {
+				q.drain = function (err) {
+					if (err) {
+						reject(err);
+						return ;
+					}
+					console.log(urls);
+					resolve(urls);
+				};
+			});
 
 		promise
 			.then(
@@ -57,46 +57,51 @@ class Parsers extends parserTools {
 			let qFilmItem = async.queue(function (url, callback) {
 				needle.get(url, (err, res) => {
 					if (url === 'http://yify.is/movie/view') return callback() ;
-				let $ = cheerio.load(res.body);
+					let $ = cheerio.load(res.body);
 
-				let data = {
-					img		: $('.img-responsive')[0].attribs.src,
-					name 	: $('#mobile-movie-info').children('h1').text(),
-					year	: $('#mobile-movie-info').children('h2').first().text(),
-					genres	: $('#mobile-movie-info').children('h2').last().text(),
-					time	: $('.tech-spec-info').children('.row').last().children('.tech-spec-element').eq(2).text(),
-					magnets	: [],
-					synopsis: $('#synopsis').children('p').eq(1).text(),
-					imdbUrl	: '',
-					cast	: [],
-					imdb	: ''
-				};
+					let data = {
+						img		: $('.img-responsive')[0].attribs.src,
+						name 	: $('#mobile-movie-info').children('h1').text(),
+						year	: $('#mobile-movie-info').children('h2').first().text(),
+						genres	: $('#mobile-movie-info').children('h2').last().text(),
+						time	: $('.tech-spec-info').children('.row').last().children('.tech-spec-element').eq(2).text(),
+						magnets	: [],
+						synopsis: $('#synopsis').children('p').eq(1).text(),
+						imdbUrl	: '',
+						cast	: [],
+						imdb	: ''
+					};
 
 
-				data.magnets.push($('.magnet-download').eq(0)[0].attribs.href);
-				data.magnets.push($('.magnet-download').eq(1)[0].attribs.href);
+					data.magnets.push($('.magnet-download').eq(0)[0].attribs.href);
+					data.magnets.push($('.magnet-download').eq(1)[0].attribs.href);
 
-				for (let i = 0; i < $('.list-cast').length; i++) {
-					data.cast.push({
-						img	: $('.list-cast').eq(i).find('img')[0].attribs.src,
-						name: $('.list-cast').eq(i).find('.name-cast').text()
-					});
-				}
-
-				for (let i = 0; i < $('.rating-row').length && $('.rating-row')[i].children[1]; i++) {
-					if ($('.rating-row')[i].children[1].attribs.title == "IMDb Rating") {
-						try {
-							data.imdb = $('.rating-row')[i].children[3].children[0].data;
-						} catch (e) {
-							data.imdb = null;
-						}
-						break ;
+					for (let i = 0; i < $('.list-cast').length; i++) {
+						data.cast.push({
+							img	: $('.list-cast').eq(i).find('img')[0].attribs.src,
+							name: $('.list-cast').eq(i).find('.name-cast').text()
+						});
 					}
-				}
 
-				data.imdb != null ? films.push(data) : 0;
-				callback();
-			});
+					for (let i = 0; i < $('.rating-row').length && $('.rating-row')[i].children[1]; i++) {
+						if ($('.rating-row')[i].children[1].attribs.title == "IMDb Rating") {
+                            try {
+                                console.log('in',
+									$('.rating-row')[i].children[3].children[0].data)
+								console.log();
+								data.imdb = $('.rating-row')[i].children[3].children[0].data;
+                                data.imdbUrl = $('.rating-row').eq(i).children('.icon')['0'].attribs.href.match(/(\/tt)[0-9a-z]+/ig);
+                            	break ;
+                            } catch (e) {
+								data.imdb = null;
+							}
+							break ;
+						}
+					}
+					console.log(data);
+					data.imdb != null ? films.push(data) : 0;
+					callback();
+				});
 			}, 20);
 
 		qFilmItem.drain = function (err) {
@@ -161,6 +166,7 @@ function parse (start, film, func, callback) {
 
 module.exports = function (start, film, callback) {
 	parse(start, film, 0, (films) => {
-		callback(films)
+		// console.log('[log] : ', films);
+		callback(JSON.stringify(films))
 	});
 };
