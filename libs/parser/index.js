@@ -166,7 +166,6 @@ function parse (start, film, func, callback) {
 
 module.exports = function (start, film, callback) {
 	parse(start, film, 0, (films) => {
-		// console.log('[log] : ', films);
-		callback(JSON.stringify(films))
+		callback(films)
 	});
 };
