@@ -1,0 +1,96 @@
+<div @fade class="pure-g watch_width ma-auto">
+  <div class="card-preview-container pure-u-1 pure-u-sm-1 pure-u-md-3-4">
+
+    <vg-player *ngIf="video_loaded">
+      <vg-overlay-play></vg-overlay-play>
+      <vg-buffering></vg-buffering>
+
+      <vg-scrub-bar>
+        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+      </vg-scrub-bar>
+
+      <vg-controls>
+        <vg-play-pause></vg-play-pause>
+        <div class="display_table">
+          <div (click)="selectSrc()" class="quality_selector">{{ src_txt }}</div>
+        </div>
+
+
+        <vg-time-display vgProperty="current" vgFormat="hh:mm:ss"></vg-time-display>
+
+        <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+
+        <vg-time-display vgProperty="left" vgFormat="hh:mm:ss"></vg-time-display>
+
+        <vg-track-selector></vg-track-selector>
+        <vg-mute></vg-mute>
+        <vg-volume></vg-volume>
+
+
+        <vg-fullscreen></vg-fullscreen>
+      </vg-controls>
+
+      <video [vgMedia]="media"
+             [attr.src]="src"
+             #media id="singleVideo" preload="auto" crossorigin>
+
+        <track kind="subtitles" label="EN" [attr.src]="subtitles[0]"
+               srclang="en">
+        <track kind="subtitles" label="RU" [attr.src]="subtitles[1]"
+               srclang="ru">
+      </video>
+    </vg-player>
+
+  <div id="dummy-video-loader" class="card" *ngIf="!video_loaded">
+      <div class="loader ma-auto"></div>
+  </div>
+
+
+  </div>
+  <div class="card-preview-container pure-u-1  pure-u-sm-1 pure-u-md-1-4">
+    <div class="card">
+      <span class="filter-btn" (click)="show_hide_about()">
+        <ng-container i18n="@@watch_page_about_title">
+          ABOUT </ng-container><i *ngIf="!showAbout" class="fa fa-caret-down fa-lg"></i>
+                               <i *ngIf="showAbout" class="fa fa-caret-up fa-lg"></i></span>
+      <div [@expandCollapse]="showAbout ? 'expanded' : 'collapsed'">
+        <h4 class="ma-t-10 ma-b-10">{{ movie.title }}</h4>
+        <div class="movie-img pa-r-5 pa-l-5 ma-b-5 front-img"
+             [style.background-image]="'url(' + movie.photo_url + ')'">
+        </div>
+        <p class="text-left ma-0 desc-wrapper">
+          <ng-container i18n="@@comments_about_year">
+            Year</ng-container>: {{ movie.year }}<br>
+          <ng-container i18n="@@comments_about_genre">
+            Genre</ng-container>: {{ movie.genre }}<br>
+          <ng-container i18n="@@comments_about_rating">
+            Rating</ng-container>: {{ movie.rating }}<br>
+          <ng-container i18n="@@comments_about_director">
+            Director</ng-container>: {{ movie.director }}<br>
+          <ng-container i18n="@@comments_about_actors">
+            Actors</ng-container>: {{ movie.actors }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-preview-container watch_width ma-auto">
+  <div class="card pa-0" style="border-radius: 10px">
+    <div class="pa-15">
+      <span class="filter-btn" (click)="show_hide_summary()">
+      <ng-container i18n="@@comments_summary_title">
+        SUMMARY</ng-container> <i *ngIf="!showSummary" class="fa fa-caret-down fa-lg"></i>
+                               <i *ngIf="showSummary" class="fa fa-caret-up fa-lg"></i></span>
+    </div>
+    <div [@expandCollapse]="showSummary ? 'expanded' : 'collapsed'" class="text-left summary-body pa-15">
+      {{ movie.description }}
+    </div>
+  </div>
+</div>
+
+<app-comments></app-comments>
+
+
+

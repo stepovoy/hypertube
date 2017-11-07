@@ -1,0 +1,75 @@
+<div @fade class="card-preview-container log_in_width ma-auto ma-t-30">
+
+
+  <div *ngIf="notActivated || registered || confirmed_api || accessDenied" class="card ma-b-20">
+    <p *ngIf="notActivated" class="text-warning"
+       i18n="@@sign_not_activated">
+      Please verify your email before signing in
+    </p>
+    <p *ngIf="registered" class="text-success"
+       i18n="@@sign_in_page_msg_verify_email">
+      Your account has been created. Please verify your email before signing in
+    </p>
+    <p *ngIf="confirmed_api" class="text-success"
+       i18n="@@sign_in_page_msg_congrats">
+      Congratulations! You can now sign-in
+    </p>
+    <p *ngIf="accessDenied" class="text-success"
+       i18n="@@sign_in_page_msg_access_denied">
+      You need to sign-in before accessing this page
+    </p>
+  </div>
+
+  <div class="card ma-b-60">
+    <h4 class="text-center"
+        i18n="@@sign_in_page_title">
+      SIGN IN
+    </h4>
+    <div *ngIf="invalidLogin" class="text-warning"
+         i18n="@@sign_in_page_invalid_credentials">
+      INVALID CREDENTIALS
+    </div>
+    <div class="text-left ma-t-10">
+      <form class="pure-form" #f="ngForm" (ngSubmit)="signIn(f.value)">
+        <fieldset>
+          <div class="ma-b-10">
+            <input ngModel name="login" class="width-100" type="text"
+                   i18n-placeholder="@@sign_in_page_login"
+                   placeholder="Login or e-mail">
+          </div>
+          <div class="ma-b-10 pure-control-group">
+            <input ngModel name="passwd" class="width-100" type="password"
+                   i18n-placeholder="@@sign_in_page_passwd"
+                   placeholder="Password">
+          </div>
+          <div class="text-right ma-b-10">
+            <ng-container i18n="@@sign_in_page_forgot_passwd">
+              forgot password?</ng-container> <a id="reset_passwd_link" routerLink="/reset-password"
+                                                 i18n="@@sign_in_page_reset">reset</a>
+          </div>
+          <div class="position-relative">
+            <button type="submit" class="ma-b-10 pure-button pure-button-primary btn-sign-in display-block ma-auto"
+                    i18n="@@sign_in_page_sign_in_btn">
+              SIGN IN
+            </button>
+
+            <button routerLink="/sign-up" class="ma-b-10 pure-button pure-button-primary btn-sign-in display-block ma-auto"
+                    i18n="@@sign_in_page_sign_up_btn">
+              SIGN UP
+            </button>
+
+          </div>
+
+        </fieldset>
+      </form>
+      <div class="text-center ma-b-5">
+        <div class="ma-b-10"
+             i18n="@@sign_in_page_continue_with">
+          OR CONTINUE WITH:
+        </div>
+        <div (click)="oAuthGoogle()" class="btn-oauth" [style.background]="'url(assets/G_100.png)'"></div>
+        <div (click)="oAuth42()" class="btn-oauth"  [style.background]="'url(assets/42_100.png)'"></div>
+      </div>
+    </div>
+  </div>
+</div>

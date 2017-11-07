@@ -1,0 +1,35 @@
+//      /search/<string:searchword>/<int:start>/<int:stop>
+//      /search/<int:start>/<int:stop>
+
+//      Примеры запросов:
+//      /search/kill/0/1
+//      /search/0/1
+
+//      Пример ответа:
+
+{
+  "search_results": [
+    {
+      "id": 2342,
+      "title": "Kill em all",
+      "year": 1986,
+      "rating": 9.5,
+      "photo_url": "/static/movies/movie1/movie_1.jpg",
+      "genre": "adventure, thriller",
+      "director": "Tobi Dilan",
+      "actors": "Robin Wiliams, Robin Good, Robin Bad",
+      "description": "story about an old fucked-up man and his dog..."
+    },
+    {
+      "id": 94642,
+      "title": "Kill switch",
+      "year": 1999,
+      "rating": 7.3,
+      "photo_url": "/static/movies/movie1/movie_1.jpg",
+      "genre": "adventure, thriller",
+      "director": "Tobi Dilan",
+      "actors": "Robin Wiliams, Robin Good, Robin Bad",
+      "description": "story about an old fucked-up man and his dog..."
+    }
+  ]
+}

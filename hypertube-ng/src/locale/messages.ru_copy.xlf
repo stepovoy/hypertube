@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="id_searchbar" datatype="html">
+        <source>search...</source>
+        <target>найти...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">searchbar </note>
+      </trans-unit>
+      <trans-unit id="id_nav_gallery" datatype="html">
+        <source>
+          GALLERY
+        </source>
+        <target>ГАЛЕРЕЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">nav gallery </note>
+      </trans-unit>
+      <trans-unit id="id_nav_my_settings" datatype="html">
+        <source>
+          MY SETTINGS
+        </source>
+        <target>НАСТРОЙКИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">nav my_settings </note>
+      </trans-unit>
+      <trans-unit id="id_nav_sign_up" datatype="html">
+        <source>
+          SIGN-UP
+        </source>
+        <target>РЕГИСТРАЦИЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">nav sign-up </note>
+      </trans-unit>
+      <trans-unit id="id_nav_sign_in" datatype="html">
+        <source>
+            SIGN-IN
+          </source>
+          <target>ВОЙТИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">nav sign-in </note>
+      </trans-unit>
+      <trans-unit id="id_nav_sign_out" datatype="html">
+        <source>
+            SIGN-OUT
+          </source>
+          <target>ВЫЙТИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <note priority="1" from="description">nav sign-out </note>
+      </trans-unit>
+      <trans-unit id="id_gallery_more" datatype="html">
+        <source>
+        MORE RESULTS
+        </source>
+        <target>ЕЩЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery-preview/gallery-preview.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">more results button </note>
+      </trans-unit>
+      <trans-unit id="id_filters" datatype="html">
+        <source>
+        ORDER AND FILTER OPTIONS
+      </source>
+      <target>СОРТИРОВКА И ФИЛЬТРЫ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Filter box heading </note>
+      </trans-unit>
+      <trans-unit id="id_filters_title" datatype="html">
+        <source>
+                  TITLE
+                </source>
+        <target>НАЗВАНИЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">title filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_genre" datatype="html">
+        <source>
+                  GENRE
+                </source>
+        <target>ЖАНР</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">genre filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_rating" datatype="html">
+        <source>
+                  RATING
+                </source>
+        <target>РЕЙТИНГ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">rating filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_rating_from" datatype="html">
+        <source>from</source>
+        <target>от</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">from filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_rating_to" datatype="html">
+        <source>to</source>
+        <target>до</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description">to filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_year" datatype="html">
+        <source>
+                  YEAR
+                </source>
+        <target>ГОД</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">year filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_year_from" datatype="html">
+        <source>from</source>
+        <target>от</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="description">from filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_year_to" datatype="html">
+        <source>to</source>
+        <target>до</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description">to filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_button_apply" datatype="html">
+        <source>
+          APPLY FILTERS
+        </source>
+        <target>ПРИМЕНИТЬ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <note priority="1" from="description">apply filters button </note>
+      </trans-unit>
+      <trans-unit id="id_filters_button_reset" datatype="html">
+        <source>
+          RESET FILTERS
+        </source>
+        <target>СБРОС</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <note priority="1" from="description">reset filters button </note>
+      </trans-unit>
+      <trans-unit id="id_card_watched" datatype="html">
+      <source>
+        watched
+      </source>
+      <target>видел</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">watched lable </note>
+      </trans-unit>
+      <trans-unit id="id_card_year" datatype="html">
+      <source>
+        Year:
+      </source>
+      <target>Год:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">year </note>
+      </trans-unit>
+      <trans-unit id="id_card_rating" datatype="html">
+      <source>
+        Rating:
+      </source>
+      <target>Рейтинг:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">rating </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

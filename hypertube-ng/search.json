@@ -1,0 +1,33 @@
+//      /search/<searchword:str>/<start:int>/<stop:int>
+//      /search/<start:int>/<stop:int>
+{
+  "search_results": [
+    {
+      "id": 1,
+      "title": "Kill switch",
+      "year": 1986,
+      "rating": 7.3,
+      "photo_url": "/static/movies/movie_1/movie_1.jpg",
+      "self_url": "http://ourhost:5006/watch/1/kill%switch",
+      "genre": "Thriller, Horror"
+    },
+    {
+      "id": 4,
+      "title": "Kukaratches",
+      "year": 1999,
+      "rating": 2.1,
+      "photo_url": "/static/movies/movie_4/movie_4.jpg",
+      "self_url": "http://ourhost:5006/watch/4/kukaratches",
+      "genre": "Comedy"
+    },
+    {
+      "id": 234,
+      "title": "Stairway",
+      "year": 2013,
+      "rating": 8.0,
+      "photo_url": "/static/movies/movie_234/movie_234.jpg",
+      "self_url": "http://ourhost:5006/watch/234/stairway",
+      "genre": "Documentary, Dramma"
+    }
+  ]
+}

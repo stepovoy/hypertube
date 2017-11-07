@@ -1,0 +1,160 @@
+<div class="pure-g">
+
+  <div class="pure-u-1 pure-u-sm-1-3 pa-10">
+    <div id="profile_avatar" class="avatar-img-big ma-auto ma-b-10"
+         [style.background-image]="'url(' + img_url + ')'">
+      <i [class.active_cross]="mouseOvered"
+         (mouseover)="mouseOvered=true"
+         (mouseout)="mouseOvered=false"
+         (click)="delPhoto()"
+         [hidden]="!display_cross" id="cross" class="fa fa-times fa-lg" aria-hidden="true"></i>
+    </div>
+
+    <input hidden (change)="fileInputChanged($event)" #fileInput type="file" accept="image/jpeg,image/png,image/gif">
+    <button (click)="uploadPhoto(fileInput)" id="btn-photo" class="pure-button pure-button-primary"
+            i18n="new photo btn @@id_edit_profile_new_photo">
+      New photo
+    </button>
+  </div>
+
+  <div class="text-left pure-u-1 pure-u-sm-2-3 ma-t-10 pa-10">
+    <form #f="ngForm" [formGroup]="form" (ngSubmit)="updateProfile()" class="pure-form">
+      <fieldset>
+        <div class="ma-b-10">
+          <label class="ma-b-5" for="login"
+                 i18n="login input lable @@id_edit_profile_login">
+            Login:&nbsp;
+          </label>
+          <input formControlName="login" class="width-100" id="login" type="text">
+          <div *ngIf="login.touched && login.invalid" class="text-warning">
+            <div *ngIf="login.errors.required"
+                 i18n="erro msg @@id_edit_profile_field_required">
+              this field is required
+            </div>
+            <div *ngIf="login.errors.minlength">
+              <ng-container i18n="erro msg @@id_edit_profile_length_error">
+                login shoud be at least</ng-container> {{login.errors.minlength.requiredLength}}&nbsp;
+              <ng-container i18n="error msg @@id_edit_profile_length_error_2">characters long</ng-container>
+            </div>
+            <div *ngIf="login.errors.cannotContainSpecial"
+                 i18n="error symbols @@id_edit_profile_symbols_error">
+              login can consist from letters, numbers, "_" and "-"
+            </div>
+            <div *ngIf="login.errors.maxLenthReached"
+                 i18n="error long @@id_edit_profile_long_error">
+              login should be not more than 128 characters long
+            </div>
+          </div>
+          <div *ngIf="login.invalid" class="text-warning">
+            <div *ngIf="login.errors.loginOccupied"
+                 i18n="@@id_edit_profile_login_occupied">
+              login occupied
+            </div>
+          </div>
+        </div>
+        <div class="ma-b-10 pure-control-group">
+          <label class="ma-b-5" for="first_name"
+                 i18n="@@id_edit_profile_first_name">
+            Firstname:&nbsp;
+          </label>
+          <input formControlName="first_name" class="width-100" id="first_name" type="text">
+          <div *ngIf="first_name.touched && first_name.invalid" class="text-warning">
+            <div *ngIf="first_name.errors.required"
+                 i18n="@@id_edit_profile_first_name_required">
+              this field is required
+            </div>
+            <div *ngIf="first_name.errors.minlength">
+              <ng-container i18n="@@id_edit_profile_first_name_short">
+                should be at least</ng-container> {{ first_name.errors.minlength.requiredLength }}
+              <ng-container i18n="@@id_edit_profile_first_name_short_2">
+                character long
+              </ng-container>
+            </div>
+            <div *ngIf="first_name.errors.onlyLetters"
+                 i18n="@@id_edit_profile_first_name_onlyletters">
+              can contain only letters
+            </div>
+          </div>
+        </div>
+        <div class="ma-b-10 pure-control-group">
+          <label class="ma-b-5" for="last_name"
+                 i18n="@@id_edit_profile_last_name">
+            Last name:&nbsp;
+          </label>
+          <input formControlName="last_name" class="width-100" id="last_name" type="text">
+          <div *ngIf="last_name.touched && last_name.invalid" class="text-warning">
+            <div *ngIf="last_name.errors.required"
+                 i18n="@@id_edit_profile_last_name_required">
+              this field is required
+            </div>
+            <div *ngIf="last_name.errors.minlength">
+              <ng-container i18n="@@id_edit_profile_last_name_short">
+                should be at least</ng-container> {{ last_name.errors.minlength.requiredLength }}
+              <ng-container i18n="@@id_edit_profile_last_name_short_2">
+                character long
+              </ng-container>
+            </div>
+            <div *ngIf="last_name.errors.onlyLetters"
+                 i18n="@@id_edit_profile_last_name_onlyletters">
+              can contain only letters
+            </div>
+          </div>
+        </div>
+        <div class="ma-b-10 pure-control-group">
+          <label class="ma-b-5" for="email"
+                 i18n="@@id_edit_profile_email">
+            email:&nbsp;
+          </label>
+          <input formControlName="email" class="width-100" id="email" type="text">
+          <div *ngIf="email.touched && email.invalid" class="text-warning">
+            <div *ngIf="email.errors.myEmail"
+                 i18n="@@id_edit_profile_email_invalid">
+              not a valid email
+            </div>
+          </div>
+          <div *ngIf="email.invalid && email.errors.emailOccupied" class="text-warning"
+               i18n="@@id_edit_profile_email_occupied">
+            email occupied
+          </div>
+        </div>
+        <div class="ma-b-10 pure-control-group">
+          <label class="ma-b-5" for="passwd"
+                 i18n="@@id_edit_profile_passwd">
+            Password:&nbsp;
+          </label>
+          <input formControlName="passwd" class="width-100" id="passwd" type="password" value="">
+          <div *ngIf="passwd.touched && passwd.invalid" class="text-warning">
+            <div *ngIf="passwd.errors.myPassword"
+                 i18n="@@id_edit_profile_passwd_invalid">
+              should be at least 8 characters long, contain numbers and letters
+            </div>
+          </div>
+        </div>
+        <div class="ma-b-10 pure-control-group">
+          <label class="ma-b-5" for="confirm_passw"
+                 i18n="@@id_edit_profile_confirm_passwd">
+            Confirm password:&nbsp;
+          </label>
+          <input formControlName="confirm_passwd" class="width-100" id="confirm_passw" type="password" value="">
+          <div *ngIf="passwd.touched && passwd.valid && form.errors && form.errors.confirmPassword"
+               class="text-warning"
+               i18n="@@id_edit_profile_confirm_passwd_dont_match">
+            passwords do not match
+          </div>
+        </div>
+        <div class="text-center">
+          <button [disabled]="!f.valid"  class="btn-width pure-button pure-button-primary"
+                  i18n="@@id_edit_profile_update_account">
+            UPDATE
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="text-center">
+      <button (click)="deleteAccount()" class="btn-width pure-button pure-button-primary"
+              i18n="@@id_edit_profile_delete_account">
+        DELETE ACCOUNT
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+#profile_avatar {
+  border: 1px solid lightgrey;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.btn-width {
+  width: 100%;
+  max-width: 200px;
+}
+
+.active_cross {
+  color: #df2a62;
+}

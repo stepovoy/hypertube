@@ -1,0 +1,18 @@
+//      /search/<searchword:str>/<start:int>/<stop:int>
+//      /search/<start:int>/<stop:int>
+
+{
+  "id": 1,
+  "title": "Kill switch",
+  "year": 1986,
+  "rating": 7.3,
+  "photo_url": "/static/movies/movie1/movie_1.jpg",
+  "movie_url": "/static/movies/movie1/movie_1.mkv",
+  "subtitles_url": "/static/movies/movie1/movie_1.srt",
+  "genre": "adventure, thriller",
+  "producer": "Barry Tailor",
+  "director": "Tobi Dilan",
+  "actors": "Robin Wiliams, Robin Good, Robin Bad",
+  "self_url": "http://ourhost:5006/watch/1",
+  "country": "Germany, USA"
+}

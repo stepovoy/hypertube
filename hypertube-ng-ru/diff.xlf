@@ -1,0 +1,38 @@
+--- messages.xlf	2017-10-30 08:41:35.165917183 +0200
++++ messages_cpy.xlf	2017-10-24 15:25:49.508891039 +0300
+@@ -66,17 +66,10 @@
+   </source>
+         <context-group purpose="location">
+           <context context-type="sourcefile">src/app/gallery-preview/gallery-preview.component.ts</context>
+-          <context context-type="linenumber">26</context>
++          <context context-type="linenumber">22</context>
+         </context-group>
+         <note priority="1" from="description">more results button </note>
+       </trans-unit>
+-      <trans-unit id="id_gallery_no_more_results" datatype="html">
+-        <source>No more results found</source>
+-        <context-group purpose="location">
+-          <context context-type="sourcefile">src/app/gallery-preview/gallery-preview.component.ts</context>
+-          <context context-type="linenumber">34</context>
+-        </context-group>
+-      </trans-unit>
+       <trans-unit id="id_filters" datatype="html">
+         <source>
+         ORDER AND FILTER OPTIONS
+@@ -209,16 +202,6 @@
+         </context-group>
+         <note priority="1" from="description">rating </note>
+       </trans-unit>
+-      <trans-unit id="id_card_genre" datatype="html">
+-        <source>
+-      Genre:
+-    </source>
+-        <context-group purpose="location">
+-          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+-          <context context-type="linenumber">23</context>
+-        </context-group>
+-        <note priority="1" from="description">rating </note>
+-      </trans-unit>
+       <trans-unit id="watch_page_about_title" datatype="html">
+         <source>
+           ABOUT </source>

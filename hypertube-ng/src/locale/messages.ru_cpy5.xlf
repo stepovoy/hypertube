@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="id_searchbar" datatype="html">
+        <source>search...</source>
+        <target>искать...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">searchbar </note>
+      </trans-unit>
+      <trans-unit id="id_nav_gallery" datatype="html">
+        <source>
+          GALLERY
+        </source>
+        <target>ГАЛЕРЕЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">nav gallery </note>
+      </trans-unit>
+      <trans-unit id="id_nav_my_settings" datatype="html">
+        <source>
+          MY SETTINGS
+        </source>
+        <target>НАСТРОЙКИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">nav my_settings </note>
+      </trans-unit>
+      <trans-unit id="id_nav_sign_up" datatype="html">
+        <source>
+          SIGN-UP
+        </source>
+        <target>ЗАРЕГИСТРИРОВАТЬСЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">nav sign-up </note>
+      </trans-unit>
+      <trans-unit id="id_nav_sign_in" datatype="html">
+        <source>
+            SIGN-IN
+          </source>
+          <target>ВОЙТИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">nav sign-in </note>
+      </trans-unit>
+      <trans-unit id="id_nav_sign_out" datatype="html">
+        <source>
+            SIGN-OUT
+          </source>
+          <target>ВЫЙТИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <note priority="1" from="description">nav sign-out </note>
+      </trans-unit>
+      <trans-unit id="id_gallery_more" datatype="html">
+        <source>
+    MORE RESULTS
+  </source>
+  <target>ЕЩЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery-preview/gallery-preview.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">more results button </note>
+      </trans-unit>
+      <trans-unit id="id_filters" datatype="html">
+        <source>
+        ORDER AND FILTER OPTIONS
+      </source>
+      <target>СОРТИРОВКА И ФИЛЬТРЫ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Filter box heading </note>
+      </trans-unit>
+      <trans-unit id="id_filters_title" datatype="html">
+        <source>
+                  TITLE
+                </source>
+                <target>НАЗВАНИЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">title filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_genre" datatype="html">
+        <source>
+                  GENRE
+                </source>
+                <target>ЖАНР</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">genre filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_rating" datatype="html">
+        <source>
+                  RATING
+                </source>
+                <target>РЕЙТИНГ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">rating filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_rating_from" datatype="html">
+        <source>from</source>
+        <target>от</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">from filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_rating_to" datatype="html">
+        <source>to</source>
+        <target>до</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description">to filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_year" datatype="html">
+        <source>
+                  YEAR
+                </source>
+                <target>ГОД</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">year filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_year_from" datatype="html">
+        <source>from</source>
+        <target>от</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="description">from filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_year_to" datatype="html">
+        <source>to</source>
+        <target>до</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description">to filter </note>
+      </trans-unit>
+      <trans-unit id="id_filters_button_apply" datatype="html">
+        <source>
+          APPLY FILTERS
+        </source>
+        <target>ПРИМЕНИТЬ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <note priority="1" from="description">apply filters button </note>
+      </trans-unit>
+      <trans-unit id="id_filters_button_reset" datatype="html">
+        <source>
+          RESET FILTERS
+        </source>
+        <target>СБРОС ФИЛЬТРОВ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery/gallery.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <note priority="1" from="description">reset filters button </note>
+      </trans-unit>
+      <trans-unit id="id_card_watched" datatype="html">
+        <source>
+      watched
+    </source>
+    <target>просмотренно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">watched lable </note>
+      </trans-unit>
+      <trans-unit id="id_card_year" datatype="html">
+        <source>
+      Year:
+    </source>
+    <target>Год:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">year </note>
+      </trans-unit>
+      <trans-unit id="id_card_rating" datatype="html">
+        <source>
+      Rating:
+    </source>
+    <target>Рейтинг:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/card-preview/card-preview.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">rating </note>
+      </trans-unit>
+      <trans-unit id="watch_page_about_title" datatype="html">
+        <source>
+          ABOUT </source>
+          <target>О ФИЛЬМЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_about_year" datatype="html">
+        <source>
+          Year</source>
+          <target>Год</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_about_genre" datatype="html">
+        <source>
+          Genre</source>
+          <target>Жанр</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_about_rating" datatype="html">
+        <source>
+          Rating</source>
+          <target>Рейтинг</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_about_director" datatype="html">
+        <source>
+          Director</source>
+          <target>Режисер</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_about_actors" datatype="html">
+        <source>
+          Actors</source>
+          <target>Актеры</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_summary_title" datatype="html">
+        <source>
+        SUMMARY</source>
+        <target>ОПИСАНИЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/watch-page/watch-page.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile" datatype="html">
+        <source>
+      EDIT PROFILE
+    </source>
+    <target>РЕДАКТИРОВАТЬ ПРОФИЛЬ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-profile-page/my-profile-page.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">edit profile </note>
+      </trans-unit>
+      <trans-unit id="sign_in_page_msg_verify_email" datatype="html">
+        <source>
+      Your account has been created. Please verify your email before signing in
+    </source>
+    <target>Аккаунт создана. Активируйте аккаун, пройдя по ссылке в email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_msg_congrats" datatype="html">
+        <source>
+      Congratulations! You can now sign-in
+    </source>
+    <target>Поздравляем! Теперь вы можете авторизироваться</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_msg_access_denied" datatype="html">
+        <source>
+      You need to sign-in before accessing this page
+    </source>
+    <target>Авторизируйтесь, чтобы получить доступ к этой странице</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_title" datatype="html">
+        <source>
+      SIGN IN
+    </source>
+    <target>АВТОРИЗАЦИЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_invalid_credentials" datatype="html">
+        <source>
+      INVALID CREDENTIALS
+    </source>
+    <target>НЕВЕРНЫЕ ИМЯ ПОЛЬЗОВАТЕЛЯ ИЛИ ПАРОЛЬ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_login" datatype="html">
+        <source>Login or e-mail</source>
+        <target>Логин или email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_forgot_passwd" datatype="html">
+        <source>
+              forgot password?</source>
+              <target>забыли пароль?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_reset" datatype="html">
+        <source>reset</source>
+        <target>восстановить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_sign_in_btn" datatype="html">
+        <source>
+              SIGN IN
+            </source>
+            <target>АВТОРИЗИРОВАТЬСЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_continue_with" datatype="html">
+        <source>
+          OR CONTINUE WITH:
+        </source>
+        <target>АВТОРИЗИРОВАТЬСЯ С АККАУНТОМ:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_title" datatype="html">
+        <source>
+      SIGN UP
+    </source>
+    <target>ЗАРЕГИСТРИРОВАТЬСЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-page/sign-up-page.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_upload_photo_btn" datatype="html">
+        <source>
+    UPLOAD PHOTO
+  </source>
+  <target>ЗАГРУЗИТЬ ФОТО</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_login_exists" datatype="html">
+        <source>
+      LOGIN OR EMAIL EXISTS
+    </source>
+    <target>ТАКИЕ ЛОГИН ИЛИ EMAIL УЖЕ ЗАНЯТЫ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_login" datatype="html">
+        <source>Login</source>
+        <target>Имя пользователя</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_required" datatype="html">
+        <source>
+          this field is required
+        </source>
+        <target>поле должно быт заполенно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_min_len" datatype="html">
+        <source>login should be at least
+          </source>
+          <target>имя пользователя должно быть не менее</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_min_len_2" datatype="html">
+        <source>charackters long</source>
+        <target>символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_special_chars" datatype="html">
+        <source>
+          login can consist from letters, numbers, &quot;_&quot; and &quot;-&quot;
+        </source>
+        <target>логин может содержать только буквы, цифры, &quot;_&quot; и &quot;-&quot;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_max_len" datatype="html">
+        <source>
+          login should be not more than 128 characters long
+        </source>
+        <target>имя пользователя должно состоять не более чем из 128 символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_login_ocupied" datatype="html">
+        <source>
+          login occupied
+        </source>
+        <target>имя пользователя уже занято</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_first_name" datatype="html">
+        <source>First name</source>
+        <target>Имя</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_name_required" datatype="html">
+        <source>
+          this field is required
+        </source>
+        <target>поле должно быт заполенно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_name_min_len" datatype="html">
+        <source>
+            should be at least
+          </source>
+          <target>имя должно состоять не менне чем из</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_name_max_len" datatype="html">
+        <source>
+          can contain only letters
+        </source>
+        <target>может состоять только из букв</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_last_name_placeholder" datatype="html">
+        <source>Last name</source>
+        <target>Фамилия</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_last_name_required" datatype="html">
+        <source>
+          this field is required
+        </source>
+        <target>поле должно быт заполенно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_last_name_min_len" datatype="html">
+        <source>
+            should be at least
+          </source>
+          <target>должно состоять не менее чем из</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_last_name_min_len_2" datatype="html">
+        <source>
+            character long
+          </source>
+          <target>символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_last_name_only_letters" datatype="html">
+        <source>
+          can contain only letters
+        </source>
+        <target>может состоять только из букв</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_email_placeholder" datatype="html">
+        <source>e-mail</source>
+        <target>e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_email_not_valid" datatype="html">
+        <source>
+          not a valid email
+        </source>
+        <target>введите настоящий email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_email_occupied" datatype="html">
+        <source>
+        email occupied
+      </source>
+      <target>email уже используется</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_passwd_placeholder" datatype="html">
+        <source>Password</source>
+        <target>Пароль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_passwd" datatype="html">
+        <source>
+          should be at least 8 characters long, contain numbers and letters
+        </source>
+        <target>должен быть не менне 8-ми символов, содержать цифры и буквы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_confirm_passwd_placeholder" datatype="html">
+        <source>Confirm password</source>
+        <target>Подтвердите пароль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_confirm_passwd_required" datatype="html">
+        <source>
+          this field is required
+        </source>
+        <target>поле должно быть заполнено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_error_passwds_do_not_match" datatype="html">
+        <source>
+        passwords do not match
+      </source>
+      <target>пароли не совпадают</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_up_page_sign_up_btn" datatype="html">
+        <source>
+        SIGN UP
+      </source>
+      <target>ЗАРЕГИСТРИРОВАТЬСЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-up-form/sign-up-form.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_new_photo" datatype="html">
+        <source>
+      New photo
+    </source>
+    <target>Загрузить фото</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">new photo btn </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_login" datatype="html">
+        <source>
+            Login: 
+          </source>
+          <target>Логин:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">login input lable </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_field_required" datatype="html">
+        <source>
+              this field is required
+            </source>
+            <target>поле должно быть заполненно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">erro msg </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_length_error" datatype="html">
+        <source>
+                login shoud be at least</source>
+                <target>имя пользователя должно состоять не менее чем из</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">erro msg </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_length_error_2" datatype="html">
+        <source>characters long</source>
+        <target>символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">error msg </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_symbols_error" datatype="html">
+        <source>
+              login can consist from letters, numbers, &quot;_&quot; and &quot;-&quot;
+            </source>
+            <target>логин может содержать только буквы, цифры, &quot;_&quot; и &quot;-&quot;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">error symbols </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_long_error" datatype="html">
+        <source>
+              login should be not more than 128 characters long
+            </source>
+            <target>имя пользователя должно состоять не более чем из 128 символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">error long </note>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_login_occupied" datatype="html">
+        <source>
+              login occupied
+            </source>
+            <target>имя пользователя уже используется</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_first_name" datatype="html">
+        <source>
+            Firstname: 
+          </source>
+          <target>Имя:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_first_name_required" datatype="html">
+        <source>
+              this field is required
+            </source>
+            <target>поле должно быть заполнено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_first_name_short" datatype="html">
+        <source>
+                should be at least</source>
+                <target>должно состоять не менее чем из</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_first_name_short_2" datatype="html">
+        <source>
+                character long
+              </source>
+              <target>символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_first_name_onlyletters" datatype="html">
+        <source>
+              can contain only letters
+            </source>
+            <target>должно состоять только из букв</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_last_name" datatype="html">
+        <source>
+            Last name: 
+          </source>
+          <target>Фамилия:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_last_name_required" datatype="html">
+        <source>
+              this field is required
+            </source>
+            <target>поля должно быть заполнено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_last_name_short" datatype="html">
+        <source>
+                should be at least</source>
+                <target>должна состоять не менее чем из</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_last_name_short_2" datatype="html">
+        <source>
+                character long
+              </source>
+              <target>символов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_last_name_onlyletters" datatype="html">
+        <source>
+              can contain only letters
+            </source>
+            <target>должна состоять только из букв</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_email" datatype="html">
+        <source>
+            email: 
+          </source>
+          <target>email:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_email_invalid" datatype="html">
+        <source>
+              not a valid email
+            </source>
+            <target>введите настоящий email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_email_occupied" datatype="html">
+        <source>
+            email occupied
+          </source>
+          <target>email уже используеться</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_passwd" datatype="html">
+        <source>
+            Password: 
+          </source>
+          <target>Пароль:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_passwd_invalid" datatype="html">
+        <source>
+              should be at least 8 characters long, contain numbers and letters
+            </source>
+            <target>должен быть не менне 8-ми символов, содержать цифры и буквы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_confirm_passwd" datatype="html">
+        <source>
+            Confirm password: 
+          </source>
+          <target>Повторите пароль:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_confirm_passwd_required" datatype="html">
+        <source>
+              this field is required
+            </source>
+            <target>должно быть заполено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_confirm_passwd_dont_match" datatype="html">
+        <source>
+            passwords do not match
+          </source>
+          <target>пароли не совпадают</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_update_account" datatype="html">
+        <source>
+            UPDATE
+          </source>
+          <target>ОБНОВИТЬ АККАУНТ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id_edit_profile_delete_account" datatype="html">
+        <source>
+        DELETE ACCOUNT
+      </source>
+      <target>УДАЛИТЬ АККАУНТ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-profile-form/edit-profile-form.component.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_title" datatype="html">
+        <source>
+          COMMENTS</source>
+          <target>КОММЕНТАРИИ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/comments/comments.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_textarea_placeholder" datatype="html">
+        <source>live a comment</source>
+        <target>напишите ваш комментарий</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/comments/comments.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments_add_comment_btn" datatype="html">
+        <source>
+          ADD COMMENT
+        </source>
+        <target>ОТПРАВИТЬ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/comments/comments.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sign_in_page_passwd" datatype="html">
+        <source>Password</source>
+        <target>Пароль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+            <trans-unit id="sign_not_activated" datatype="html">
+        <source>
+      Please verify your email before signing in
+    </source>
+    <target>
+    Пожалуйста, подтвердите email, пройдя по ссылке в письме
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+            <trans-unit id="sign_in_page_sign_up_btn" datatype="html">
+        <source>
+              SIGN UP
+            </source>
+            <target>СОЗДАТЬ АККАУНТ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sign-in-page/sign-in-page.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

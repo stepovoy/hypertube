@@ -1,0 +1,28 @@
+//      /watch/<int:movie_id>
+
+//      Примеры запроса:
+//      /watch/2342
+
+//      Пример ответа:
+
+//{
+//  "movie_url": [
+//    "/static/movies/movie2/movie_2_720p.mp4",
+//    "/static/movies/movie2/movie_2_1080p.mp4"
+//  ],
+//  "subtitles_url": [
+//    "/static/movies/movie2/movie_2_en.vtt",
+//    "/static/movies/movie2/movie_2_ru.vtt"
+//  ]
+//}
+
+{
+  "movie_url": {
+    "720": "/static/movies/movie2/movie_2_720p.mp4",
+    "1080": "/static/movies/movie2/movie_2_1080p.mp4"
+  },
+  "subtitles_url": {
+    "en": "/static/movies/movie2/movie_2_en.vtt",
+    "ru": "/static/movies/movie2/movie_2_ru.vtt"
+  }
+}

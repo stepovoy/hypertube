@@ -1,0 +1,21 @@
+.btn-sign-in {
+  min-width: 120px;
+}
+
+.btn-oauth {
+  opacity: 0.6;
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  border: 1px solid lightgrey !important;
+  border-radius: 8px !important;
+}
+
+.btn-oauth:hover {
+  box-shadow: 0 0 1px 1px grey;
+  opacity: 1;
+}

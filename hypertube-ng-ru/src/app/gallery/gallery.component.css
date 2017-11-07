@@ -1,0 +1,17 @@
+.half-input {
+  display: inline-block;
+  width: 45%;
+}
+
+.half-div-container {
+  /*margin: 0 !important;*/
+  /*padding: 0 !important;*/
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .half-input {
+    width: 100%;
+  }
+}

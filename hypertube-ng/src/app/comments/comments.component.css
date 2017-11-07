@@ -1,0 +1,15 @@
+textarea {
+  width: 100%;
+}
+
+.comment-avatar {
+  border: 1px solid lightgrey;
+  position: relative;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.comment_wrapper {
+  word-wrap: break-word;
+}

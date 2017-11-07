@@ -1,0 +1,27 @@
+<div class="card card-preview" (click)="watch($event)">
+  <div class="text-right">
+    <div class="dummy_div">watched</div>
+    <div class="watched"
+         *ngIf="is_seen"
+         i18n="watched lable @@id_card_watched">
+      watched
+    </div>
+  </div>
+  <h4 class="card-preview-heading">{{ title | slice:0:20 }}</h4>
+  <div #movieImg class="movie-img"
+        [style.background]="'url(' + img_url + ')'">
+  </div>
+  <p class="card-preview-text">
+    <ng-container i18n="year @@id_card_year">
+      Year:
+    </ng-container> {{ year }}
+    <br>
+    <ng-container i18n="rating @@id_card_rating">
+      Rating:
+    </ng-container> {{ rating }}
+    <br>
+    <ng-container i18n="rating @@id_card_genre">
+      Genre:
+    </ng-container> {{(genre | slice:0:14) + (genre.length >= 11 ? '...' : '') }}
+  </p>
+</div>

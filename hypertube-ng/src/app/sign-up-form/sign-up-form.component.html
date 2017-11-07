@@ -1,0 +1,147 @@
+<div class="avatar-img ma-auto ma-b-10"
+     [ngStyle]="{'background-image': 'url(' + img_url + ')'}">
+</div>
+
+<div class="ma-b-10 text-center">
+  <button (click)="uploadPhoto(fileInput)" class="pure-button pure-button-primary"
+          i18n="@@sign_up_page_upload_photo_btn">
+    UPLOAD PHOTO
+  </button>
+</div>
+
+<input hidden (change)="fileInputChanged($event)" #fileInput type="file" accept="image/jpeg,image/png,image/gif">
+
+<form #f="ngForm" [formGroup]="form" (ngSubmit)="register()" class="pure-form">
+  <fieldset>
+    <div *ngIf="form.errors && form.errors.userExists" class="text-warning text-center ma-b-10"
+          i18n="@@sign_up_page_login_exists">
+      LOGIN OR EMAIL EXISTS
+    </div>
+
+
+    <div class="ma-b-10">
+      <input formControlName="login" class="width-100" id="login" type="text"
+             i18n-placeholder="@@sign_up_page_login"
+             placeholder="Login">
+      <div *ngIf="login.touched &&
+                  login.invalid" class="text-warning">
+        <div *ngIf="login.errors.required"
+             i18n="@@sign_up_page_error_required">
+          this field is required
+        </div>
+        <div *ngIf="login.errors.minlength">
+          <ng-container i18n="@@sign_up_page_error_min_len">login should be at least
+          </ng-container> {{ login.errors.minlength.requiredLength }}
+          <ng-container i18n="@@sign_up_page_error_min_len_2">charackters long</ng-container>
+        </div>
+        <div *ngIf="login.errors.cannotContainSpecial"
+             i18n="@@sign_up_page_error_special_chars">
+          login can consist from letters, numbers, "_" and "-"
+        </div>
+        <div *ngIf="login.errors.maxLenthReached"
+             i18n="@@sign_up_page_error_max_len">
+          login should be not more than 128 characters long
+        </div>
+      </div>
+      <div *ngIf="login.invalid" class="text-warning">
+        <div *ngIf="login.errors.loginOccupied"
+             i18n="@@sign_up_page_error_login_ocupied">
+          login occupied
+        </div>
+      </div>
+    </div>
+    <div class="ma-b-10">
+      <input formControlName="first_name" class="width-100" id="first_name" type="text"
+             i18n-placeholder="@@sign_up_page_first_name"
+             placeholder="First name">
+      <div *ngIf="first_name.touched && first_name.invalid" class="text-warning">
+        <div *ngIf="first_name.errors.required"
+             i18n="@@sign_up_page_error_name_required">
+          this field is required
+        </div>
+        <div *ngIf="first_name.errors.minlength">
+          <ng-container i18n="@@sign_up_page_error_name_min_len">
+            should be at least
+          </ng-container> {{ first_name.errors.minlength.requiredLength }}
+          <ng-container i18n="@@sign_up_page_error_name_min_len">
+            character long</ng-container>
+        </div>
+        <div *ngIf="first_name.errors.onlyLetters"
+             i18n="@@sign_up_page_error_name_max_len">
+          can contain only letters
+        </div>
+      </div>
+    </div>
+    <div class="ma-b-10">
+      <input formControlName="last_name" class="width-100" id="last_name" type="text"
+             i18n-placeholder="@@sign_up_page_last_name_placeholder"
+             placeholder="Last name">
+      <div *ngIf="last_name.touched && last_name.invalid" class="text-warning">
+        <div *ngIf="last_name.errors.required"
+             i18n="@@sign_up_page_error_last_name_required">
+          this field is required
+        </div>
+        <div *ngIf="last_name.errors.minlength">
+          <ng-container i18n="@@sign_up_page_error_last_name_min_len">
+            should be at least
+          </ng-container> {{ last_name.errors.minlength.requiredLength }}
+          <ng-container i18n="@@sign_up_page_error_last_name_min_len_2">
+            character long
+          </ng-container>
+        </div>
+        <div *ngIf="last_name.errors.onlyLetters"
+             i18n="@@sign_up_page_error_last_name_only_letters">
+          can contain only letters
+        </div>
+      </div>
+    </div>
+    <div class="ma-b-10">
+      <input formControlName="email" class="width-100" id="email" type="text"
+             i18n-placeholder="@@sign_up_page_email_placeholder"
+             placeholder="e-mail">
+      <div *ngIf="email.touched && email.invalid" class="text-warning">
+        <div *ngIf="email.errors.myEmail"
+             i18n="@@sign_up_page_error_email_not_valid">
+          not a valid email
+        </div>
+      </div>
+      <div *ngIf="email.invalid && email.errors.emailOccupied" class="text-warning"
+           i18n="@@sign_up_page_error_email_occupied">
+        email occupied
+      </div>
+    </div>
+    <div class="ma-b-10 pure-control-group">
+      <input formControlName="passwd" class="width-100" id="passwd" type="password"
+             i18n-placeholder="@@sign_up_page_passwd_placeholder"
+             placeholder="Password">
+      <div *ngIf="passwd.touched && passwd.invalid" class="text-warning">
+        <div *ngIf="passwd.errors.myPassword"
+             i18n="@@sign_up_page_error_passwd">
+          should be at least 8 characters long, contain numbers and letters
+        </div>
+      </div>
+    </div>
+    <div class="ma-b-20 pure-control-group">
+      <input formControlName="confirm_passwd" class="width-100" id="confirm_passwd" type="password"
+             i18n-placeholder="@@sign_up_page_confirm_passwd_placeholder"
+             placeholder="Confirm password">
+      <div *ngIf="confirm_passwd.touched && confirm_passwd.invalid" class="text-warning">
+        <div *ngIf="confirm_passwd.errors.required"
+             i18n="@@sign_up_page_error_confirm_passwd_required">
+          this field is required
+        </div>
+      </div>
+      <div *ngIf="confirm_passwd.touched && passwd.valid && form.errors && form.errors.confirmPassword"
+           class="text-warning"
+           i18n="@@sign_up_page_error_passwds_do_not_match">
+        passwords do not match
+      </div>
+    </div>
+    <div class="text-center">
+      <button id="btn-submit" [disabled]="!f.valid" class="ma-b-10 pure-button pure-button-primary"
+              i18n="@@sign_up_page_sign_up_btn">
+        SIGN UP
+      </button>
+    </div>
+  </fieldset>
+</form>

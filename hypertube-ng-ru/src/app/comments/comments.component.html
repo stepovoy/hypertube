@@ -1,0 +1,45 @@
+<div class="card-preview-container watch_width ma-auto ma-b-60">
+  <div class="card comment-box">
+    <div class="ma-t-15 ma-b-15">
+      <span class="filter-btn" (click)="show_hide_comments()">
+        <ng-container i18n="@@comments_title">
+          COMMENTS</ng-container> <i *ngIf="!showComments" class="fa fa-caret-down fa-lg"></i>
+                                  <i *ngIf="showComments" class="fa fa-caret-up fa-lg"></i></span>
+    </div>
+
+    <div [@expandCollapse]="showComments ? 'expanded' : 'collapsed'">
+      <div  class="hypertube-comment position-relative">
+        <form class="pure-form ma-t-10 ma-b-10">
+        <textarea #comment_input (keyup.enter)="addComment(comment_input)" name="comment_input" rows="4"
+                  i18n-placeholder="@@comments_textarea_placeholder"
+                  placeholder="live a comment" class=""></textarea>
+        </form>
+        <div class="text-center ma-b-5">
+          <button (click)="addComment(comment_input)" class="pure-button pure-button-primary"
+                  i18n="@@comments_add_comment_btn">
+            ADD COMMENT
+          </button>
+        </div>
+      </div>
+
+
+      <div *ngFor="let comment of comments" class="hypertube-comment pure-g">
+        <div class="text-center pure-u-1 pure-u-sm-1-4 pure-u-md-1-6 pure-u-lg-1-12">
+          <div [routerLink]="['/profile', comment.user_id]" class="display-inline-block avatar-img comment-avatar pointer"
+               [style.background-image]="'url(' + avatarUrl(comment) + ')'">
+          </div>
+        </div>
+        <div class="pa-l-5 display-inline-block comment-msg pure-u-1 pure-u-sm-3-4 pure-u-md-5-6 pure-u-lg-11-12">
+
+          <div class="ma-b-5">
+            <span [routerLink]="['/profile', comment.user_id]" class="pointer">{{ comment.login }}</span>&nbsp;&nbsp;&nbsp;{{ comment.date_time * 1000 | date:'MMMM d, H:mm' }}
+          </div>
+
+          <div class="comment_wrapper" [innerHTML]="comment.msg | nl2br">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

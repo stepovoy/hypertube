@@ -1,0 +1,15 @@
+
+<!--<div class="text-center">-->
+  <!--<p>{{status}}</p>-->
+<!--</div>-->
+
+<div @fade class="card-preview-container ma-auto ma-t-30">
+
+  <div class="card card-width-300 ma-auto">
+    <div class="text-center">
+      <p>{{status}}</p>
+    </div>
+    <div *ngIf="loader_pending" class="loader ma-auto"></div>
+  </div>
+
+</div>

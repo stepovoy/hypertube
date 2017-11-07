@@ -1,0 +1,18 @@
+    <div class="card-preview-container profile_width ma-auto">
+        <div class="card">
+            <div class="pure-g">
+                <div *ngIf="user" class="pure-u-1 pure-u-sm-1-3 ma-b-10 ma-t-10">
+                        <div id="prof-avatar" class="avatar-img-big ma-auto profile_avatar"
+                             [style.background-image]="'url(' + user.avatar_url + ')'">
+                    </div>
+                </div>
+
+                <div *ngIf="user" class="text-left pure-u-1 pure-u-sm-2-3 ma-t-10">
+                    Login: {{ user.login }}<br>
+                    First name: {{ user.first_name }}<br>
+                    Last name: {{ user.last_name }}<br>
+                    Member since: {{ user.join_date * 1000 | date }}
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,20 @@
+<div class="card-preview-container log_in_width ma-auto ma-t-30">
+  <div class="card ma-b-60">
+    <h4 class="text-center">ENTER A NEW PASSWORD</h4>
+    <div *ngIf="unauthorized" class="text-warning text-center">UNAUTHORIZED</div>
+    <div class="text-left ma-t-10">
+      <form [formGroup]="form" (ngSubmit)="updatePasswd()" class="pure-form">
+        <fieldset class="text-center">
+          <div class="ma-b-10 pure-control-group">
+            <input formControlName="passwd" class="width-100" id="passwd" type="password" placeholder="password">
+            <div *ngIf="passwd.touched && passwd.invalid" class="text-warning">
+              <div *ngIf="passwd.errors.myPassword" class="text-left">should be at least 8 characters long, contain numbers and letters
+              </div>
+            </div>
+          </div>
+          <button class="pure-button pure-button-primary">SET NEW PASSWORD</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>

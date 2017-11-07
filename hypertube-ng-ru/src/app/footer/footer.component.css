@@ -1,0 +1,13 @@
+#footer {
+    background-color: #476C9B;
+    position: absolute;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #C3CEE2;
+}
